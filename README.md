@@ -8,24 +8,37 @@ Esta prueba consiste en replicar dos de las vistas actuales de claro video web, 
 
 ## REQUERIMIENTOS TECNICOS GENERALES
 
-• Se deberá usar react y react-redux.
-• El desarrollo deberá incluir pruebas unitarias.
-• Se deberá de subir la prueba a un repositorio publico.
-• En el repositorio deberá existir un README con las instrucciones para levantar el proyecto y correr pruebas
-unitarias.
-• La aplicación deberá subirse a un hosting o nube.
+<ul>
+    <li>Se deberá usar react y react-redux.</li>
+    <li>El desarrollo deberá incluir pruebas unitarias.</li>
+    <li>Se deberá de subir la prueba a un repositorio publico.</li>
+    <li>En el repositorio deberá existir un README con las instrucciones para levantar el proyecto y correr pruebas
+unitarias.</li>
+    <li>La aplicación deberá subirse a un hosting o nube.</li>
+</ul>
 
 ## PASOS
-
-1.- Creación de repositorio en Github
-2.- Creación de proyecto react con redux
-3.- Creación de pruebas unitarias
-4.- Publicación en hosting
+<ol>
+    <li>Creación de repositorio en Github</li>
+    <li>Creación de proyecto react con redux</li>
+    <li>Creación de pruebas unitarias</li>
+    <li>Publicación en hosting</li>
+</ol>
 
 ## PASOS PARA CORRER EL PROYECTO EN LOCAL
 
-1.- Clonar repositorio https://github.com/alcocoha/clarovideo-test.git
-2.- Instalar el administrador de paquetes de Node.js instalando Node.js desde https://nodejs.org/es/
-3.- Instalar react con la siguiente instrucción: npm install react
-4.- Entrar a la carpeta del proyecto "clarovideo-test"
-5.- Correr la aplicación con la siguiente instrucción: npm start
+<ol>
+    <li>Clonar el repositorio https://github.com/alcocoha/clarovideo-test.git</li>
+    <li>Instalar el administrador de paquetes de Node.js instalando <a href="https://nodejs.org/es/" target="_blank">Node.js</a></li>
+    <li>
+        Instalar react con la siguiente instrucción
+        <pre>npm install react</pre>
+    </li>
+    <li>Entrar a la carpeta del proyecto "clarovideo-test"</li>
+    <li>
+        Correr la aplicación con la siguiente instrucción
+        <pre>npm start</pre>
+    </li>
+    <li></li>
+</ol>
+
