@@ -1,0 +1,21 @@
+.Search .container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Search .container label {
+    color: white;
+}
+
+.Search .container input {
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    margin-left: 20px;
+    padding: 5px 15px;
+    border: 1px solid rgb(110, 110, 110);
+}
+
+.Search .container input:focus {
+    outline: none;
+}

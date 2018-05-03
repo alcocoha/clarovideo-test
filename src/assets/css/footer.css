@@ -1,0 +1,10 @@
+.Footer {
+    text-align: center;
+    color: white;
+}
+
+.Footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 12px;
+}

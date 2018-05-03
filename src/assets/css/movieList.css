@@ -1,0 +1,47 @@
+.img-container {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.img-movie {
+    width: 100%;
+}
+
+.item-wrapper a {
+    cursor: pointer;
+}
+
+.conteiner-icon {
+    background-color: black;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.play-icon {
+    font-size: 74px;
+    color: white;
+    margin: auto;
+    display: table;
+}
+
+.movie-link-detail {
+    cursor: pointer;
+}
+
+.movie-link-detail:hover .conteiner-icon {
+    opacity: .5;
+}

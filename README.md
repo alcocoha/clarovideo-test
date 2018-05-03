@@ -39,6 +39,14 @@ unitarias.</li>
         Correr la aplicación con la siguiente instrucción
         <pre>npm start</pre>
     </li>
-    <li></li>
 </ol>
 
+## DEPENDENCIAS UTILIZADAS
+
+<p>Axios</p>
+<p>Permite hacer conexiones HTTP externas</p>
+<pre>npm install --save axios</pre>
+
+<p>Router dom</p>
+<p>Es un enrutador que permite reescriben secciones de una página en lugar de cargar páginas nuevas completas desde un servidor tipo SPA</p>
+<pre>npm install --save react-router-dom</pre>
