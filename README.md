@@ -61,8 +61,12 @@ unitarias.</li>
 
 ## LIGA DEV
 
-http://jorgehurtado.me/clarovideo-test/
+http://jorgehdev.esy.es/
 
 ## PRUEBAS UNITARIAS
+
+TODO
+
+## RESPONSIVE
 
 TODO
