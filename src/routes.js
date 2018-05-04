@@ -4,14 +4,14 @@ import { Route, Switch } from "react-router-dom";
 
 // Componentes
 import App from "./App";
-// import DetailMovie from "./components/detailMovie/DetailMovie";
-import MovieList from './components/MovieList';
+import MovieList from "./components/MovieList";
+import DetailMovie from "./components/DetailMovie";
 
 const AppRoutes = () =>
     <App>
         <Switch>
             <Route exact path="/" name="movieList" component={MovieList} />
-            {/* <Route exact path="/detail/:id" name="detail" component={DetailMovie} /> */}
+            <Route exact path="/detail/:id" name="detail" component={DetailMovie} />
         </Switch>
     </App>
 

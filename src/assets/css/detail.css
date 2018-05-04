@@ -1,0 +1,19 @@
+.DetailMovie {
+    color: white;
+}
+
+.DetailMovie h1 {
+    font-size: 18px;
+}
+
+.img-detail {
+    width: 100%;
+}
+
+.description {
+    font-size: 12px;
+}
+
+.detail-movie-container{
+    margin-top: 100px;
+}

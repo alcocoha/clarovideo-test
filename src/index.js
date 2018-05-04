@@ -9,9 +9,9 @@ import AppRoutes from "./routes";
 import './index.css';
 
 render(
-        <Router>
-            <AppRoutes />
-        </Router>
+    <Router>
+        <AppRoutes />
+    </Router>
     , document.getElementById('root')
 );
 registerServiceWorker();

@@ -50,3 +50,19 @@ unitarias.</li>
 <p>Router dom</p>
 <p>Es un enrutador que permite reescriben secciones de una página en lugar de cargar páginas nuevas completas desde un servidor tipo SPA</p>
 <pre>npm install --save react-router-dom</pre>
+
+<p>Redux</p>
+<p>Permite almacenar mi estado en un Store, este estado solo va a poder cambiar a través de acciones</p>
+<pre>npm install --save redux</pre>
+
+<p>PropTypes</p>
+<p>Permite pasar propiedades de componente a componente</p>
+<pre>npm install --save prop-types</pre>
+
+## LIGA DEV
+
+http://jorgehurtado.me/clarovideo-test/
+
+## PRUEBAS UNITARIAS
+
+TODO
