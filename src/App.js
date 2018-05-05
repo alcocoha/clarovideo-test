@@ -1,6 +1,5 @@
 // Dependencias
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import store from './store';
 import ClaroVideoAPI from "./api";
 
@@ -13,9 +12,6 @@ import './App.css';
 
 // Componente principal
 class App extends Component {
-	static propTypes = {
-		children : PropTypes.object.isRequired
-	}
 	constructor() {
 		super();
 		this.state = {
