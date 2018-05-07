@@ -55,6 +55,17 @@ unitarias.</li>
 <p>Permite almacenar mi estado en un Store, este estado solo va a poder cambiar a través de acciones</p>
 <pre>npm install --save redux</pre>
 
+<p>React-redux</p>
+<p>Permite almacenar mi estado en un Store, este estado solo va a poder cambiar a través de acciones</p>
+<pre>npm install --save react-redux</pre>
+<pre>
+<i><small>IMPORTANTE: Estudiando un poco más sobre redux y react decidí instalar react-redux para optimizar la funcionalidad del proyecto</small></i>
+</pre>
+
+<p>Redux-thunk</p>
+<p>Permite conectar con los action y en lugar de devolver un objeto devuelve una función con una acción asyncrona</p>
+<pre>npm install --save redux-thunk</pre>
+
 ## LIGA DEV
 
 http://jorgehdev.esy.es/
@@ -66,3 +77,11 @@ TODO
 ## RESPONSIVE
 
 TODO
+
+## DATOS IMPORTANTES REDUX
+
+<ol>
+    <li>Store: Unica fuente de la verdad</li>
+    <li>State: es de solo lectura</li>
+    <li>Reducers: Los cambios se realizan unicamente con reducers(Funciones puras)</li>
+</ol>
