@@ -47,8 +47,6 @@ class DetailMovie extends Component {
                                                     index.talents.talent.map(item => <span className="border-name">{item.fullname}</span>)
                                                 }
                                             </p>
-
-
                                         )
                                     }
                                 </p>

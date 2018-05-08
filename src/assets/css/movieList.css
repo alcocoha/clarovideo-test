@@ -45,3 +45,22 @@
 .movie-link-detail:hover .conteiner-icon {
     opacity: .5;
 }
+
+.img-container {
+    width: 100px;
+    /* background-color: purple; */
+}
+
+.container {
+    width: 85%;
+}
+
+.img-movie-mobile {
+    width: 100%;
+}
+@media (min-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+}

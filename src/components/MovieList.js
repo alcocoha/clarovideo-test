@@ -49,14 +49,14 @@ class MovieList extends Component {
         const { movies } = this.state;
         
         return (movies.map(movie =>
-            <div className="col-md-3 img-container" key={movie.id}>
+            <div className="col-6 col-md-3 img-container" key={movie.id}>
 
                 <Link to={`/detail/${movie.id}`} title={movie.title} className="movie-link-detail">
-                    <div className="conteiner-icon">
+                    <div className="conteiner-icon d-none">
                         <i className="fa fa-play-circle-o play-icon"></i>
                     </div>
-                    <img alt={movie.title} src={movie.image_small} className="img-movie" />
-                    <img alt={movie.title} src={movie.image_medium} className="d-md-none d-sm-block " />
+                    <img alt={movie.title} src={movie.image_small} className="img-movie d-none d-md-block" />
+                    <img alt={movie.title} src={movie.image_medium} className="img-movie-mobile d-md-none d-sm-block " />
                 </Link>
 
             </div>
