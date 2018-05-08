@@ -66,13 +66,24 @@ unitarias.</li>
 <p>Permite conectar con los action y en lugar de devolver un objeto devuelve una función con una acción asyncrona</p>
 <pre>npm install --save redux-thunk</pre>
 
+<p>Redux mock store</p>
+<p>...</p>
+<pre>npm install --save redux-mock-store</pre>
+
+
+
 ## LIGA DEV
 
 http://jorgehdev.esy.es/
 
 ## PRUEBAS UNITARIAS
-
-TODO
+<p>
+Las pruebas unitarias se realizaron con Jest, un framework que se instala al momento de enviar la instrucción create-react-app.
+</p>
+<p>
+Para correr las pruebas una vez instalado el proyecto se ejecuta la siguiente instrucción desde npm
+</p>
+<pre>npm test</pre>
 
 ## RESPONSIVE
 

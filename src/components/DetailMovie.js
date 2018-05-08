@@ -13,22 +13,25 @@ class DetailMovie extends Component {
     }
     
     render() {
-        let movie = this.props.movie.payloadDetail;
+        const {movie} = this.props;
+        console.log('extendedcommon' in movie)
         return (
             <div className="DetailMovie">
                 <div className="container detail-movie-container">
                     {
                         <div className="row">
                             <div className="col-md-5">
-                                < h1 > {movie.title} </h1>
+                                <h1> {movie.title} </h1>
                                 <img src={movie.image_small} alt="" className="img-detail" />
                             </div>
                             <div className="col-md-7 description">
                                 <p>
-                                    {movie.large_description}
+                                    Descripción: {movie.large_description}
                                 </p>
                                 <p>
-                                    {/* Año: {movie.extendedcommon.media.publishyear} */}
+                                    Año: {'extendedcommon' in movie && movie.extendedcommon.media.publishyear} 
+                                </p>
+                                <p>
                                     <br />
                                     Duración: {movie.duration}
                                 </p>
@@ -42,7 +45,7 @@ class DetailMovie extends Component {
 }
 const mapStateToProps = state => {
     return {
-        movie: state.dataReducer
+        movie: state.dataReducer.payloadDetail
     }
 }
 const mapDispatchToProps = dispatch => {

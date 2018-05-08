@@ -1,6 +1,5 @@
 // Dependencias
 import React, { Component } from 'react';
-import store from '../store';
 
 // Assets
 import '../assets/css/search.css';

@@ -26,7 +26,7 @@ class MovieList extends Component {
     }
 
     componentWillReceiveProps = ({ movies }) => {
-        if (movies.payload.length != -1 ){
+        if (movies.payload.length !== -1 ){
             this.setState({
                 movies: movies.payload,
                 _movies: movies.payload

@@ -18,5 +18,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://jorgehdev.esy.es/"
+  "homepage": "http://jorgehdev.esy.es/",
+  "devDependencies": {
+    
+  }
 }
