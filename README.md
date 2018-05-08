@@ -66,9 +66,9 @@ unitarias.</li>
 <p>Permite conectar con los action y en lugar de devolver un objeto devuelve una función con una acción asyncrona</p>
 <pre>npm install --save redux-thunk</pre>
 
-<p>Redux mock store</p>
-<p>...</p>
-<pre>npm install --save redux-mock-store</pre>
+<p>React tooltip</p>
+<p>Permite generar un tooltip dinamico</p>
+<pre> npm install --save react-tooltip</pre>
 
 
 

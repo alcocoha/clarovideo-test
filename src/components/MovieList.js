@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import ReactTooltip from 'react-tooltip'
 
 // Componentes
 import Search from './Search';
@@ -45,25 +46,54 @@ class MovieList extends Component {
         })
     }
 
+    drawStars = (num) => {
+        let star = [];
+        const totalStars = 5 - num;
+        for(let i=0; i < num; i++){
+            star.push(
+                <span className="fa fa-star"></span>
+            );
+        }
+        if (totalStars!==0){
+            for (let i = 0; i < totalStars; i++) {
+                star.push(
+                    <span className="fa fa-star-o"></span>
+                );
+            }
+        }
+        return star;
+    }
+
     getMovie = () => {
         const { movies } = this.state;
-        
+
         return (movies.map(movie =>
             <div className="col-6 col-md-3 img-container" key={movie.id}>
-
-                <Link to={`/detail/${movie.id}`} title={movie.title} className="movie-link-detail">
-                    <div className="conteiner-icon d-none">
-                        <i className="fa fa-play-circle-o play-icon"></i>
-                    </div>
-                    <img alt={movie.title} src={movie.image_small} className="img-movie d-none d-md-block" />
-                    <img alt={movie.title} src={movie.image_medium} className="img-movie-mobile d-md-none d-sm-block " />
-                </Link>
+                <p data-tip={movie.title} data-for={movie.id}>
+                    <Link to={`/detail/${movie.id}`} title={movie.title} className="movie-link-detail">
+                        <div className="conteiner-icon d-none">
+                            <i className="fa fa-play-circle-o play-icon"></i>
+                        </div>
+                        <img alt={movie.title} src={movie.image_small} className="img-movie d-none d-md-block" />
+                        <img alt={movie.title} src={movie.image_medium} className="img-movie-mobile d-md-none d-sm-block " />
+                    </Link>
+                </p>
+                <ReactTooltip id={movie.id} aria-haspopup='true' role='example' className="tool">
+                    <h1 className="tool-title">{movie.title}</h1>
+                    <p className="tool-duration">{movie.year}, duración: {movie.duration} hrs.</p>
+                    <p className="tool-decription">{movie.description}</p>
+                    <p className="tool-stars">
+                    {
+                        this.drawStars(movie.votes_average)
+                    }
+                    </p>
+                </ReactTooltip>
 
             </div>
         )
         );
     }
-    
+
     render() {
         let movies = this.getMovie();
         return (

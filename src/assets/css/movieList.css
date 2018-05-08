@@ -58,9 +58,43 @@
 .img-movie-mobile {
     width: 100%;
 }
-@media (min-width:768px) {
+
+.tool {
+    width: 300px;
+}
+
+.tool-title {
+    color: #ecaf2a;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.tool-decription {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.tool-duration {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tool-stars {
+    color: #ecaf2a;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.__react_component_tooltip {
+    padding: 0 0;
+}
+
+@media (min-width: 768px) {
     .container {
         width: 100%;
     }
-
 }
