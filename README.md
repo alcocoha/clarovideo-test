@@ -87,7 +87,7 @@ Para correr las pruebas una vez instalado el proyecto se ejecuta la siguiente in
 
 ## RESPONSIVE
 
-TODO
+DONE
 
 ## DATOS IMPORTANTES REDUX
 
