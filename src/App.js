@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import configureStore from './configureStore';
+import { fetchData } from "./actions";
 
 // Componentes
 import Header from './components/Header';
@@ -14,6 +15,9 @@ let store = configureStore();
 
 // Componente principal
 class App extends Component {
+	componentWillMount() {
+        store.dispatch(fetchData());
+    }
 	render() {
 		const { children } = this.props;
 		return (

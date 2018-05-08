@@ -2,10 +2,6 @@
     color: white;
 }
 
-.DetailMovie h1 {
-    font-size: 18px;
-}
-
 .img-detail {
     width: 100%;
 }
@@ -14,6 +10,24 @@
     font-size: 12px;
 }
 
-.detail-movie-container{
+.detail-movie-container {
     margin-top: 100px;
+}
+
+.border-name {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 3px 7px;
+    margin: 2px;
+    display: inline-block;
+}
+
+.title-description {
+    font-size: 18px;
+}
+
+.main-title {
+    color: #ecaf2a;
+    font-size: 30px;
+    font-weight: bold
 }

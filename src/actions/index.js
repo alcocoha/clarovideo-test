@@ -1,4 +1,4 @@
-import { FETCHING_DATA, FETCHING_DATA_SUCCESS, FETCHING_DATA_FAILURE, FETCHING_DATA_DETAIL_SUCCESS } from '../constants';
+import { FETCHING_DATA, FETCHING_DATA_SUCCESS, FETCHING_DATA_FAILURE, FETCHING_DATA_DETAIL, FETCHING_DATA_DETAIL_SUCCESS, FETCHING_DATA_DETAIL_FAILURE } from '../constants';
 import axios from "axios";
 
 export const getData = () => {
@@ -10,7 +10,7 @@ export const getData = () => {
 export const getDataSuccess = data => {
     return {
         type: FETCHING_DATA_SUCCESS,
-        payload: data
+        data: data
     }
 }
 
@@ -20,10 +20,22 @@ export const getDataFailure = () => {
     }
 }
 
+export const getDataDetail = () => {
+    return {
+        type: FETCHING_DATA_DETAIL
+    }
+}
+
 export const getDataDetailSuccess = data => {
     return {
         type: FETCHING_DATA_DETAIL_SUCCESS,
-        payloadDetail: data
+        data: data
+    }
+}
+
+export const getDataDetailFailure = () => {
+    return {
+        type: FETCHING_DATA_DETAIL_FAILURE
     }
 }
 
@@ -48,11 +60,11 @@ export const fetchDataDetail = (id) => {
     const endpoint = `${BASE_URL}/services/content/data?${params}`;
 
     return dispatch => {
-        dispatch(getData());
+        dispatch(getDataDetail());
         return axios.get(endpoint)
             .then(res => {
                 dispatch(getDataDetailSuccess(res.data.response.group.common));
             })
-            .catch(dispatch(getDataFailure()));
+            .catch(dispatch(getDataDetailFailure()));
     }
 }

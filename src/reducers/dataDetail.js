@@ -1,26 +1,26 @@
-import { FETCHING_DATA, FETCHING_DATA_SUCCESS, FETCHING_DATA_FAILURE } from '../constants';
+import { FETCHING_DATA_DETAIL, FETCHING_DATA_DETAIL_SUCCESS, FETCHING_DATA_DETAIL_FAILURE } from '../constants';
 
 const INITIAL_STATE = {
-    movies: [],
+    detail: [],
     isFetching: false,
     error: false
 };
 
-const dataReducer = (state = INITIAL_STATE, action) => {
+const dataDetail = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case FETCHING_DATA:
+        case FETCHING_DATA_DETAIL:
             return {
                 ...state,
-                movies: [],
+                detail: [],
                 isFetching: true
             }
-        case FETCHING_DATA_SUCCESS:
+        case FETCHING_DATA_DETAIL_SUCCESS:
             return {
                 ...state,
-                movies: action.data,
+                detail: action.data,
                 isFetching: false
             }
-        case FETCHING_DATA_FAILURE:
+        case FETCHING_DATA_DETAIL_FAILURE:
             return {
                 ...state,
                 error: true
@@ -29,4 +29,4 @@ const dataReducer = (state = INITIAL_STATE, action) => {
             return state;
     }
 };
-export default dataReducer;
+export default dataDetail;

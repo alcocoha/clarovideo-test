@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchData } from "../actions";
 
 // Componentes
 import Search from './Search';
@@ -20,18 +19,22 @@ class MovieList extends Component {
         movies: [],
         _movies: [],
     }
-
-    componentWillMount() {
-        this.props.fetchData();
+    initState = (data) => {
+        if (data.length !== -1) {
+            return this.setState({
+                movies: data,
+                _movies: data
+            })
+        }
+        return null;
+    }
+    componentWillMount = () => {
+        const { movies } = this.props;
+        this.initState(movies);
     }
 
     componentWillReceiveProps = ({ movies }) => {
-        if (movies.payload.length !== -1 ){
-            this.setState({
-                movies: movies.payload,
-                _movies: movies.payload
-            })
-        }
+        this.initState(movies);
     }
 
     onSearchChange = (query) => {
@@ -81,14 +84,8 @@ class MovieList extends Component {
 // Regresa los estados de redux por props
 const mapStateToProps = state => {
     return {
-        movies: state.dataReducer
-    }
-}
-// Dispara las acciones
-const mapDispatchToProps = dispatch => {
-    return {
-        fetchData: () => dispatch(fetchData())
+        movies: state.dataReducer.movies
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MovieList);
+export default connect(mapStateToProps)(MovieList);
