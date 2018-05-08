@@ -43,30 +43,32 @@ unitarias.</li>
 
 ## DEPENDENCIAS UTILIZADAS
 
-<p>Axios</p>
+<p>Instalar las siguientes dependencias:</p>
+
+<p><strong>Axios</strong></p>
 <p>Permite hacer conexiones HTTP externas</p>
 <pre>npm install --save axios</pre>
 
-<p>Router dom</p>
+<p><strong>Router dom</strong></p>
 <p>Es un enrutador que permite reescriben secciones de una página en lugar de cargar páginas nuevas completas desde un servidor tipo SPA</p>
 <pre>npm install --save react-router-dom</pre>
 
-<p>Redux</p>
+<p><strong>Redux</strong></p>
 <p>Permite almacenar mi estado en un Store, este estado solo va a poder cambiar a través de acciones</p>
 <pre>npm install --save redux</pre>
 
-<p>React-redux</p>
+<p><strong>React-redux</strong></p>
 <p>Permite almacenar mi estado en un Store, este estado solo va a poder cambiar a través de acciones</p>
 <pre>npm install --save react-redux</pre>
 <pre>
 <i><small>IMPORTANTE: Estudiando un poco más sobre redux y react decidí instalar react-redux para optimizar la funcionalidad del proyecto</small></i>
 </pre>
 
-<p>Redux-thunk</p>
+<p><strong>Redux-thunk</strong></p>
 <p>Permite conectar con los action y en lugar de devolver un objeto devuelve una función con una acción asyncrona</p>
 <pre>npm install --save redux-thunk</pre>
 
-<p>React tooltip</p>
+<p><strong>React tooltip</strong></p>
 <p>Permite generar un tooltip dinamico</p>
 <pre> npm install --save react-tooltip</pre>
 
