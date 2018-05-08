@@ -69,9 +69,9 @@ class MovieList extends Component {
 
         return (movies.map(movie =>
             <div className="col-6 col-md-3 img-container" key={movie.id}>
-                <p data-tip={movie.title} data-for={movie.id}>
+                <p className="detail-container" data-tip={movie.title} data-for={movie.id}>
                     <Link to={`/detail/${movie.id}`} title={movie.title} className="movie-link-detail">
-                        <div className="conteiner-icon d-none">
+                        <div className="conteiner-icon">
                             <i className="fa fa-play-circle-o play-icon"></i>
                         </div>
                         <img alt={movie.title} src={movie.image_small} className="img-movie d-none d-md-block" />
